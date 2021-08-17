@@ -32,7 +32,7 @@ describe(projectName, () => {
   })
   describe('Home page test', () => {
         test('The app should have home page with all the popular tv shows', async () => {
-            await page.goto('http://localhost:3000');
+            await page.goto('http://localhost:3000', {"waitUntil" : "networkidle0"});
             const { data: theShows } = await axios.get(
                 'https://www.episodate.com/api/most-popular'
             );
