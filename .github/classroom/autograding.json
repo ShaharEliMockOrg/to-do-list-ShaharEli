@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "test",
+      "setup": "cd shows && npm install",
+      "run": "cd shows && npm test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
